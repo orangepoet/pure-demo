@@ -4,25 +4,46 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
-	<link rel="stylesheet" href="css/pure.css">
 	<style>
-		#bg{
-			background-color: orange;
-			padding: 10px;
-			border: 1px solid black;
-			margin: 10px auto;
-			width: 200px;
-		}
+	#wrap{
+		width: 100%;
+	}
+	#header{
+		position: fixed;
+		background-color: blue;
+		height: 40px;
+		width: 100%;
+	}
+	#header>a{
+		color:white;
+	}
+	#main{
+		top:40px;
+		position: relative;
+		
+		background-color: orange;
+		height: 1000px;
+	}
+	#part1,
+	#part2{
+
+		height: 500px;
+	}
 	</style>
 </head>
 <body>
-	<div class="pure-menu pure-menu-open pure-menu-horizontal">
-		<ul>
-
-		</ul>
-	</div>
-	<div id="bg">
-		
+	<div id="wrap">
+		<div id="header">
+		<a href="#part1">part1</a>
+		</div>
+		<div id="main">
+			<div id="part1">
+				<span>header1</span>
+			</div>
+			<div id="part2">
+				<span>header2</span>
+			</div>
+		</div>	
 	</div>
 </body>
 </html>
