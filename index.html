@@ -11,7 +11,7 @@
     <div id="wrap">
 		<div id="header" class="">
 			<div id="logo">
-				<a href="#" title="携程无线">
+				<a target="_blank" href="#" title="携程无线">
 					<img class="pure-img" src="img/logo.png" height="46" width="142" alt="">
 				</a>
 			</div>
@@ -22,49 +22,45 @@
 			</div>
 		</div>
 		<div id="nav">
-			<div class="pure-menu pure-menu-open pure-menu-horizontal">
-				<ul>
-					<li><a href="#db">DB</a></li>
-					<li><a href="#memcache">Memcache</a></li>
-                    <li><a href="#apps">Apps</a></li>
-					<li><a href="#server">Server</a></li>
-				</ul>
-			</div>
+            <div class="logo1">
+                <span class="logo1-title">无线 Swat Portal</span>
+            </div>
+            <div class="navbar">
+                <div class="pure-menu pure-menu-open pure-menu-horizontal">
+                    <ul>
+                        <li><a href="#db">DB</a></li>
+                        <li><a href="#memcache">Memcache</a></li>
+                        <li><a href="#apps">Apps</a></li>
+                        <li><a href="#server">Server</a></li>
+                    </ul>
+                </div>    
+            </div>
 		</div>
 		<div id="main">
 			<div id="main-container">
                 <!-- DB -->
-                <div class="section1" id="db">
+                <div class="clear" id="db"></div>
+                <div class="section1">
                     <h2 class="header2">DB</h2>
-    				<div class="section2">
+    				<div class="section2 ">
                         <h3 class="header3">DB</h3>
     					<table class="pure-table pure-table-bordered">
     						<thead>
     							<tr>
                                     <th>DB名称</th>
-                                    <th>服务</th>
+                                    <!-- <th>服务</th>
                                     <th>内存</th>
                                     <th>UC</th>
                                     <th>Block</th>
-                                    <th>IOPS</th>
+                                    <th>IOPS</th> -->
                                 </tr>
     						</thead>
     						<tbody>
     							<tr>
                                     <td><a target="_blank" href="http://eudemon.ops.ctripcorp.com/dbmon/?id=SCHSmartTripDB" class="dblink">SCHSmartTripDB</a></td>
-                                    <td><a href="" class="dblink"></a></td>
-                                    <td><a href="" class="dblink"></a></td>
-                                    <td><a href="" class="dblink"></a></td>
-                                    <td><a href="" class="dblink"></a></td>
-                                    <td><a href="" class="dblink"></a></td>
                                 </tr>
                                 <tr>
                                     <td><a target="_blank" href="http://eudemon.ops.ctripcorp.com/dbmon/?id=MobileDB" class="dblink">MobileDB</a></td>
-                                    <td><a href="" class="dblink"></a></td>
-                                    <td><a href="" class="dblink"></a></td>
-                                    <td><a href="" class="dblink"></a></td>
-                                    <td><a href="" class="dblink"></a></td>
-                                    <td><a href="" class="dblink"></a></td>
                                 </tr>
     						</tbody>
     					</table>
@@ -72,7 +68,8 @@
                 </div>
 
                 <!-- Memcache -->
-                <div class="section1" id="memcache">
+                <div class="clear" id="memcache"></div>
+                <div class="section1">
                     <h2 class="header2">Memcache</h2>
                     <div class="section2">
                         <h3 class="header3">Memcache</h3>
@@ -82,41 +79,38 @@
                                     <th>名称</th>
                                     <th>Instance</th>
                                     <th>Dash Boards</th>
-                                    <th>Clients</th>
+                                    <!-- <th>Clients</th> -->
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>ScheduleCached</td>
-                                    <td><a href="http://sysmon.sh.ctripcorp.com/memcached/?memcached=10.8.91.83:11280&metric_type=CLUSTER" class="">10.8.91.83:11280</a></td>
-                                    <td><a href="http://cdataportal.sh.ctripcorp.com/fx/memdb/">Dash board</a></td>
-                                    <td></td>
+                                    <td><a target="_blank" href="http://sysmon.sh.ctripcorp.com/memcached/?memcached=10.8.91.83:11280&metric_type=CLUSTER" class="">10.8.91.83:11280</a></td>
+                                    <td><a target="_blank" href="http://cdataportal.sh.ctripcorp.com/fx/memdb/">Dash board</a></td>
                                 </tr>
                                 <tr>    
                                     <td>ScheduleCached</td>
-                                    <td><a href="http://sysmon.sh.ctripcorp.com/memcached/?memcached=10.8.89.225:11235&metric_type=CLUSTER" class="">10.8.89.225:11235</a></td>
-                                    <td><a href="http://cdataportal.sh.ctripcorp.com/fx/memdb/">Dash board</a></td>
-                                    <td></td>
+                                    <td><a target="_blank" href="http://sysmon.sh.ctripcorp.com/memcached/?memcached=10.8.89.225:11235&metric_type=CLUSTER" class="">10.8.89.225:11235</a></td>
+                                    <td><a target="_blank" href="http://cdataportal.sh.ctripcorp.com/fx/memdb/">Dash board</a></td>
                                 </tr>
                                 <tr>
                                     <td>ScheduleCached</td>
-                                    <td><a href="http://sysmon.sh.ctripcorp.com/memcached/?memcached=10.8.91.82:11281&metric_type=CLUSTER" class="">10.8.91.82:11281</a></td>
-                                    <td><a href="http://cdataportal.sh.ctripcorp.com/fx/memdb/">Dash board</a></td>
-                                    <td></td>
+                                    <td><a target="_blank" href="http://sysmon.sh.ctripcorp.com/memcached/?memcached=10.8.91.82:11281&metric_type=CLUSTER" class="">10.8.91.82:11281</a></td>
+                                    <td><a target="_blank" href="http://cdataportal.sh.ctripcorp.com/fx/memdb/">Dash board</a></td>
                                 </tr>
                                 <tr>
                                     <td>ScheduleCached</td>
-                                    <td><a href="http://sysmon.sh.ctripcorp.com/memcached/?memcached=10.8.91.85:11277&metric_type=CLUSTER" class="">10.8.91.85:11277</a></td>
-                                    <td><a href="http://cdataportal.sh.ctripcorp.com/fx/memdb/">Dash board</a></td>
-                                    <td></td>
+                                    <td><a target="_blank" href="http://sysmon.sh.ctripcorp.com/memcached/?memcached=10.8.91.85:11277&metric_type=CLUSTER" class="">10.8.91.85:11277</a></td>
+                                    <td><a target="_blank" href="http://cdataportal.sh.ctripcorp.com/fx/memdb/">Dash board</a></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-
+                
                 <!-- apps -->
-                <div class="section1" id="apps">
+                <div class="clear" id="apps"></div>
+                <div class="section1">
                     <h2 class="header2">Apps</h2>
                     <div class="section2">
                         <h3 class="header3">Web</h3>
@@ -128,7 +122,8 @@
                                     <th>应用程序英文名</th>
                                     <th>应用程序中文名</th>
                                     <th>clog</th>
-                                    <th>iis log</th>
+                                    <th>SQL错误看板</th>
+                                    <th>SQL实时监控</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -137,40 +132,45 @@
                                     <td>381001</td>
                                     <td>Schedule.ItineraryMgr.H5Api</td>
                                     <td>为旅行日程H5提供SOA2.0服务</td>
-                                    <td><a href=""></a></td>
-                                    <td><a href=""></a></td>
+                                    <td><a target="_blank" href="http://logging.ctripcorp.com/#?app=381001">Clog</a></td>
+                                    <td><a target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlError~appId=381004">SQL错误看板</a></td>
+                                    <td><a target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlMonitor~appId=381001">SQL实时监控</a></td>
                                 </tr>
                                 <tr>
                                     <td>服务</td>
                                     <td>340101</td>
                                     <td>WAP.Server.MobileService</td>
                                     <td>手机服务端</td>
-                                    <td><a href=""></a></td>
-                                    <td><a href=""></a></td>
+                                    <td><a target="_blank" href="http://logging.ctripcorp.com/#?app=340101">Clog</a></td>
+                                    <td><a target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlError~appId=340101">SQL错误看板</a></td>
+                                    <td><a target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlMonitor~appId=340101">SQL实时监控</a></td>
                                 </tr>
                                 <tr>
                                     <td>服务</td>
                                     <td>340701</td>
                                     <td>WAP.Order.InternalService</td>
                                     <td>无线内部订单SOA2.0服务（订单落地使用</td>
-                                    <td><a href=""></a></td>
-                                    <td><a href=""></a></td>
+                                    <td><a target="_blank" href="http://logging.ctripcorp.com/#?app=340701">Clog</a></td>
+                                    <td><a target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlError~appId=340701">SQL错误看板</a></td>
+                                    <td><a target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlMonitor~appId=340701">SQL实时监控</a></td>
                                 </tr>
                                 <tr>
                                     <td>Webs</td>
                                     <td>340502</td>
                                     <td>WAP.Schedule.H5Site</td>
                                     <td>无线旅行日程H5站点</td>
-                                    <td><a href=""></a></td>
-                                    <td><a href=""></a></td>
+                                    <td><a target="_blank" href="http://logging.ctripcorp.com/#?app=340502">Clog</a></td>
+                                    <td><a target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlError~appId=340502">SQL错误看板</a></td>
+                                    <td><a target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlMonitor~appId=340502">SQL实时监控</a></td>
                                 </tr>
                                 <tr>
                                     <td>Jobs</td>
                                     <td>340501</td>
                                     <td>WAP.Schedule.JobWS</td>
                                     <td>旅行日程JobWS（用于同步Poi数据</td>
-                                    <td><a href=""></a></td>
-                                    <td><a href=""></a></td>
+                                    <td><a target="_blank" href="http://logging.ctripcorp.com/#?app=340501">Clog</a></td>
+                                    <td><a target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlError~appId=340501">SQL错误看板</a></td>
+                                    <td><a target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlMonitor~appId=340501">SQL实时监控</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -180,42 +180,34 @@
                         <table class="pure-table pure-table-bordered">
                             <thead>
                                 <tr>
-                                    <th>分类</th>
+                                    <th>所属子系统</th>
                                     <th>编号</th>
                                     <th>应用程序英文名</th>
-                                    <th>应用程序中文名</th>
+                                    <th>域名</th>
+                                    <th>虚拟目录</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>服务</td>
+                                    <td>PubBizService.CRMService</td>
                                     <td>800101</td>
                                     <td>PubBizService.CRMService.UserService</td>
-                                    <td></td>
+                                    <td>pubbizws.sh.ctripcorp.com</td>
+                                    <td>PubBizService-CRMService-UserService</td>
                                 </tr>
                                 <tr>
-                                    <td>服务</td>
+                                    <td>Customer.API</td>
                                     <td>480701</td>
                                     <td>JourneyBill</td>
                                     <td></td>
+                                    <td></td>
                                 </tr>
                                 <tr>
-                                    <td>服务</td>
+                                    <td>Customer.API</td>
                                     <td>480705</td>
                                     <td>Customer.API.API</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Webs</td>
-                                    <td>480704</td>
-                                    <td>Customer.API.Online</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Jobs</td>
-                                    <td>480702</td>
-                                    <td>Customer.API.JobWS</td>
-                                    <td></td>
+                                    <td>loginws.sh.ctriptravel.com </td>
+                                    <td>JourneyBill</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -223,7 +215,8 @@
                 </div>
 
                 <!-- server cluster -->
-                <div class="section1" id="server">
+                <div class="clear" id="server"></div>
+                <div class="section1">
                     <h2 class="header2">Server Clusters</h2>
                     <div class="section2">
                         <h3 class="header3">Server</h3>
@@ -241,36 +234,36 @@
                                     <td>服务</td>
                                     <td>381001</td>
                                     <td>为旅行日程H5提供SOA2.0服务</td>
-                                    <td><a href=""></a></td>
-                                    <td><a href=""></a></td>
+                                    <td><a target="_blank" href=""></a></td>
+                                    <td><a target="_blank" href=""></a></td>
                                 </tr>
                                 <tr>
                                     <td>服务</td>
                                     <td>340101</td>
                                     <td>手机服务端</td>
-                                    <td><a href=""></a></td>
-                                    <td><a href=""></a></td>
+                                    <td><a target="_blank" href=""></a></td>
+                                    <td><a target="_blank" href=""></a></td>
                                 </tr>
                                 <tr>
                                     <td>服务</td>
                                     <td>340701</td>
                                     <td>无线内部订单SOA2.0服务（订单落地使用</td>
-                                    <td><a href=""></a></td>
-                                    <td><a href=""></a></td>
+                                    <td><a target="_blank" href=""></a></td>
+                                    <td><a target="_blank" href=""></a></td>
                                 </tr>
                                 <tr>
                                     <td>Webs</td>
                                     <td>340502</td>
                                     <td>无线旅行日程H5站点</td>
-                                    <td><a href=""></a></td>
-                                    <td><a href=""></a></td>
+                                    <td><a target="_blank" href=""></a></td>
+                                    <td><a target="_blank" href=""></a></td>
                                 </tr>
                                 <tr>
                                     <td>Jobs</td>
                                     <td>340501</td>
                                     <td>旅行日程JobWS（用于同步Poi数据</td>
-                                    <td><a href=""></a></td>
-                                    <td><a href=""></a></td>
+                                    <td><a target="_blank" href=""></a></td>
+                                    <td><a target="_blank" href=""></a></td>
                                 </tr>
                             </tbody>
                         </table>
