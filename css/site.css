@@ -1,0 +1,117 @@
+/*
+*  html5 doctor css reset | http://html5doctor.com/html-5-reset-stylesheet
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+body{
+	font-family: arial,​宋体,​sans-serif;
+	font-size: 16px;
+	color:#777777;
+}
+
+#header{
+	margin: 0 auto;
+	width: 75%;
+	height: 72px;
+}
+
+#logo{
+	position: relative;
+	float: left;
+	height: 72px;
+	float: left;
+}
+	#logo>a{
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+
+#banner{
+	position: relative;
+	margin-left: 150px;
+	height: 72px;
+}
+	#banner .banner-container{
+		position: absolute;
+		left: 100px;
+		bottom: 0;
+	}
+
+	#banner .banner-container .title{
+		font-size: 24px;
+		font-style: italic;
+		font-weight: bold;
+		padding-left: 20px;
+		color:#4B4B4B;
+	}
+
+#nav{
+	width: 100%;
+	margin: 10px 0 0;
+	background-image: url('../img/nav_bg.png');
+	background-repeat: repeat-x;
+	background-color: rgba(0,​0,​0,​0);
+}
+	#nav >div{
+		margin: 0 auto;
+		width: 75%;
+		color:#FFF;
+	}
+
+#main{
+	padding-top: 15px;
+	background-color: #F5F5F5;
+}
+	
+	#main-container{
+		width: 75%;
+		margin: 0 auto;
+		padding: 20px;
+		border: 1px solid #E5E5E5;
+		border-radius: 5px;
+		background-color: white;
+	}
+
+	#main-container .title2{
+		font-size: 20px;
+		font-weight: bold;
+		padding: 5px;
+		color:#4B4B4B;
+	}	
+
+	#main-container .partial{
+		padding: 0 20px;
+		border-top: 1px solid #E5E5E5;
+		padding: 10px 5px;
+	}
+
+.pure-g div {
+}
+	.pure-g  p{
+		margin: 0 5px;
+		text-align: center;
+		line-height: 50px;
+		padding:0 10px;
+		height: 50px;
+		background-color: orange;
+	}	
+
+
+.pure-table{
+	width: 100%;
+}
