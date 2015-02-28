@@ -1,340 +1,479 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>无线Swat</title>
-    <link rel="icon" href="img/favicon.png">
-	<link rel="stylesheet" href="css/pure.css">
-	<link rel="stylesheet" href="css/site.css">
-</head>
-<body>
-    <div id="wrap">
-		<div id="header" class="">
-			<div id="logo">
-				<a target="_blank" href="#" title="携程无线">
-					<img class="pure-img" src="img/logo.png" height="46" width="142" alt="">
-				</a>
-			</div>
-			<div id="banner">
-				<div class="banner-container">
-					<h1 class="title">Wireless Swat Portal</h1>	
-				</div>
-			</div>
-		</div>
-		<div id="nav">
-            <div class="logo1">
-                <span class="logo1-title">无线 Swat Portal</span>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>无线Swat</title>
+        <link rel="icon" href="img/favicon.png">
+        <link rel="stylesheet" href="css/pure.css">
+        <link rel="stylesheet" href="css/site.css">
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="header" class="">
+                <div id="logo">
+                    <a target="_blank" href="#" title="携程无线">
+                        <img class="pure-img" src="img/logo.png" height="46" width="142" alt="">
+                    </a>
+                </div>
+                <div id="banner">
+                    <div class="banner-container">
+                        <h1 class="title">Wireless Swat Portal</h1>
+                    </div>
+                </div>
             </div>
-            <div class="navbar">
-                <div class="pure-menu pure-menu-open pure-menu-horizontal">
-                    <ul>
-                        <li><a href="#db">DB</a></li>
-                        <li><a href="#memcache">Memcache</a></li>
-                        <li><a href="#apps">Apps</a></li>
-                        <li><a href="#cluster">集群</a></li>
-                        <li><a href="#server">服务</a></li>
-                        <li><a href="#contact">联系我们</a></li>
-                    </ul>
-                </div>    
+            <div id="nav">
+                <div class="logo1">
+                    <span class="logo1-title">旅行日程</span>
+                </div>
+                <div class="navbar">
+                    <div class="pure-menu pure-menu-open pure-menu-horizontal">
+                        <ul>
+                            <li><a href="#apps">Apps</a></li>
+                            <li><a href="#cluster">集群</a></li>
+                            <li><a href="#server">服务</a></li>
+                            <li><a href="#db">DB</a></li>
+                            <li><a href="#memcache">Memcache</a></li>
+                            <li><a href="#smoking">Smoking Report</a></li>
+                            <li><a href="#contact">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-		</div>
-		<div id="main">
-			<div id="main-container">
-                <!-- DB -->
-                <div class="ancher" id="db"></div>
-                <div class="section1">
-                    <h2 class="header2">DB</h2>
-    				<div class="section2 pure-u-1-3">
-                        <h3 class="header3">DB</h3>
-    					<table class="pure-table pure-table-bordered">
-    						<thead>
-    							<tr>
-                                    <th>DB名称</th>
-                                    <!-- <th>服务</th>
-                                    <th>内存</th>
-                                    <th>UC</th>
-                                    <th>Block</th>
-                                    <th>IOPS</th> -->
-                                </tr>
-    						</thead>
-    						<tbody>
-    							<tr>
-                                    <td><a target="_blank" href="http://eudemon.ops.ctripcorp.com/dbmon/?id=SCHSmartTripDB" class="dblink">SCHSmartTripDB</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a target="_blank" href="http://eudemon.ops.ctripcorp.com/dbmon/?id=MobileDB" class="dblink">MobileDB</a></td>
-                                </tr>
-    						</tbody>
-    					</table>
-    				</div>
-                </div>
-
-                <!-- Memcache -->
-                <div class="ancher" id="memcache"></div>
-                <div class="section1">
-                    <h2 class="header2">Memcache</h2>
-                    <div class="section2">
-                        <h3 class="header3">Memcache</h3>
-                        <table class="pure-table pure-table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>名称</th>
-                                    <th>Instance</th>
-                                    <th>Dash Boards</th>
-                                    <!-- <th>Clients</th> -->
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>ScheduleCached</td>
-                                    <td><a target="_blank" href="http://sysmon.sh.ctripcorp.com/memcached/?memcached=10.8.91.83:11280&metric_type=CLUSTER" class="">10.8.91.83:11280</a></td>
-                                    <td><a target="_blank" href="http://cdataportal.sh.ctripcorp.com/fx/memdb/">Dash board</a></td>
-                                </tr>
-                                <tr>    
-                                    <td>ScheduleCached</td>
-                                    <td><a target="_blank" href="http://sysmon.sh.ctripcorp.com/memcached/?memcached=10.8.89.225:11235&metric_type=CLUSTER" class="">10.8.89.225:11235</a></td>
-                                    <td><a target="_blank" href="http://cdataportal.sh.ctripcorp.com/fx/memdb/">Dash board</a></td>
-                                </tr>
-                                <tr>
-                                    <td>ScheduleCached</td>
-                                    <td><a target="_blank" href="http://sysmon.sh.ctripcorp.com/memcached/?memcached=10.8.91.82:11281&metric_type=CLUSTER" class="">10.8.91.82:11281</a></td>
-                                    <td><a target="_blank" href="http://cdataportal.sh.ctripcorp.com/fx/memdb/">Dash board</a></td>
-                                </tr>
-                                <tr>
-                                    <td>ScheduleCached</td>
-                                    <td><a target="_blank" href="http://sysmon.sh.ctripcorp.com/memcached/?memcached=10.8.91.85:11277&metric_type=CLUSTER" class="">10.8.91.85:11277</a></td>
-                                    <td><a target="_blank" href="http://cdataportal.sh.ctripcorp.com/fx/memdb/">Dash board</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                
-                <!-- apps -->
-                <div class="ancher" id="apps"></div>
-                <div class="section1">
-                    <h2 class="header2">Apps</h2>
-                    <div class="section2">
-                        <h3 class="header3">Web</h3>
-                        <table class="pure-table pure-table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>分类</th>
-                                    <th>编号</th>
-                                    <th>应用程序英文名</th>
-                                    <th>应用程序中文名</th>
-                                    <th>clog</th>
-                                    <th>SQL错误看板</th>
-                                    <th>SQL实时监控</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>服务</td>
-                                    <td>381001</td>
-                                    <td>Schedule.ItineraryMgr.H5Api</td>
-                                    <td>为旅行日程H5提供SOA2.0服务</td>
-                                    <td><a target="_blank" href="http://logging.ctripcorp.com/#?app=381001">Clog</a></td>
-                                    <td><a target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlError~appId=381004">SQL错误看板</a></td>
-                                    <td><a target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlMonitor~appId=381001">SQL实时监控</a></td>
-                                </tr>
-                                <tr>
-                                    <td>服务</td>
-                                    <td>340101</td>
-                                    <td>WAP.Server.MobileService</td>
-                                    <td>手机服务端</td>
-                                    <td><a target="_blank" href="http://logging.ctripcorp.com/#?app=340101">Clog</a></td>
-                                    <td><a target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlError~appId=340101">SQL错误看板</a></td>
-                                    <td><a target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlMonitor~appId=340101">SQL实时监控</a></td>
-                                </tr>
-                                <tr>
-                                    <td>服务</td>
-                                    <td>340701</td>
-                                    <td>WAP.Order.InternalService</td>
-                                    <td>无线内部订单SOA2.0服务（订单落地使用</td>
-                                    <td><a target="_blank" href="http://logging.ctripcorp.com/#?app=340701">Clog</a></td>
-                                    <td><a target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlError~appId=340701">SQL错误看板</a></td>
-                                    <td><a target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlMonitor~appId=340701">SQL实时监控</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Webs</td>
-                                    <td>340502</td>
-                                    <td>WAP.Schedule.H5Site</td>
-                                    <td>无线旅行日程H5站点</td>
-                                    <td><a target="_blank" href="http://logging.ctripcorp.com/#?app=340502">Clog</a></td>
-                                    <td><a target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlError~appId=340502">SQL错误看板</a></td>
-                                    <td><a target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlMonitor~appId=340502">SQL实时监控</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Jobs</td>
-                                    <td>340501</td>
-                                    <td>WAP.Schedule.JobWS</td>
-                                    <td>旅行日程JobWS（用于同步Poi数据</td>
-                                    <td><a target="_blank" href="http://logging.ctripcorp.com/#?app=340501">Clog</a></td>
-                                    <td><a target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlError~appId=340501">SQL错误看板</a></td>
-                                    <td><a target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlMonitor~appId=340501">SQL实时监控</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="section2">
-                        <h3 class="header3">SOA1.0</h3>
-                        <table class="pure-table pure-table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>所属子系统</th>
-                                    <th>编号</th>
-                                    <th>应用程序英文名</th>
-                                    <th>域名</th>
-                                    <th>虚拟目录</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>PubBizService.CRMService</td>
-                                    <td>800101</td>
-                                    <td>PubBizService.CRMService.UserService</td>
-                                    <td>pubbizws.sh.ctripcorp.com</td>
-                                    <td>PubBizService-CRMService-UserService</td>
-                                </tr>
-                                <tr>
-                                    <td>Customer.API</td>
-                                    <td>480701</td>
-                                    <td>JourneyBill</td>
-                                    <td>loginws.sh.ctriptravel.com</td>
-                                    <td>JourneyBill</td>
-                                </tr>
-                                <tr>
-                                    <td>Customer.API</td>
-                                    <td>480705</td>
-                                    <td>Customer.API.API</td>
-                                    <td>loginws.sh.ctriptravel.com </td>
-                                    <td>Customer-API-API</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- cluster -->
-                <div class="ancher" id="cluster"></div>
-                <div class="section1">
-                    <h2 class="header2">集群</h2>
-                    <div class="section2">
-                        <div class="pure-g">
-                            <div class="pure-u-1-2">
-                                <div class="ext-pure-u-content">
-                                    <h3 class="header3">服务器集群</h3>
-                                    <ul class="ext-pure-ul">
-                                        <li><a href="http://opskits.ctripcorp.com/Pool/List?Device=&Product=&Status=&Keyword=VS_Ws.mobile.schedule" target="_blank">Ws.mobile.schedule</a></li>
-                                        <li><a href="http://opskits.ctripcorp.com/Pool/List?Device=&Product=&Status=&Keyword=VS_Ws.schedule" target="_blank">Ws.schedule</a></li>
-                                        <li><a href="http://opskits.ctripcorp.com/Pool/List?Device=&Product=&Status=&Keyword=jobws.mobile.ctripcorp.com" target="_blank">jobws.mobile.ctripcorp.com</a></li>
-                                        <li><a href="http://opskits.ctripcorp.com/Pool/List?Device=&Product=&Status=&Keyword=sg_schedule_80" target="_blank">sg_schedule_80</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="pure-u-1-2">
-                                <div class="ext-pure-u-content">
-                                    <h3 class="header3">IIS日志</h3>
-                                    <ul class="ext-pure-ul">
-                                        <li><a href="http://es.ops.ctripcorp.com/#/dashboard/elasticsearch/ws.mobile.schedule.ctripcorp.com" target="_blank">ws.mobile.schedule.ctripcorp.com</a></li>
-                                        <li><a href="http://es.ops.ctripcorp.com/#/dashboard/elasticsearch/ws.mobile.schedule.ctripcorp.com" target="_blank">ws.mobile.ctripcorp.com</a></li>
-                                    </ul>    
-                                </div>
-                            </div>
+            <div id="main">
+                <div id="main-container">
+                    <!-- apps -->
+                    <div class="ancher" id="apps"></div>
+                    <div class="section1">
+                        <h2 class="header2">Apps</h2>
+                        <div class="section2">
+                            <h3 class="header3">服务列表</h3>
+                            <table class="pure-table pure-table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>AppID</th>
+                                        <th>名称</th>
+                                        <th>域名</th>
+                                        <th>虚拟目录</th>
+                                        <th>clog</th>
+                                        <th>SQL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>381001</td>
+                                        <td>为旅行日程H5提供SOA2.0服务</td>
+                                        <td>ws.schedule.ctripcorp.com</td>
+                                        <td>H5Api</td>
+                                        <td><a class="pure-button" target="_blank" href="http://logging.ctripcorp.com/#?app=381001">查看</a></td>
+                                        <td>
+                                            <a class="pure-button" target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlError~appId=381001">错误看板</a>
+                                            <a class="pure-button" target="_blank" href="http://portal.arch.ctripcorp.com/#menuId=sqlMonitor~appId=381001">实时监控</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>381004</td>
+                                        <td>手机服务端</td>
+                                        <td>ws.mobile.schedule.ctripcorp.com</td>
+                                        <td>ScheduleApi</td>
+                                        <td><a class="pure-button" target="_blank" href="http://logging.ctripcorp.com/#?app=381004">查看</a></td>
+                                        <td>
+                                            <a target="_blank" class="pure-button" href="http://portal.arch.ctripcorp.com/#menuId=sqlError~appId=381004">错误看板</a>
+                                            <a target="_blank" class="pure-button" href="http://portal.arch.ctripcorp.com/#menuId=sqlMonitor~appId=381004">实时监控</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>340701</td>
+                                        <td>无线内部订单SOA2.0服务</td>
+                                        <td>ws.schedule.ctripcorp.com</td>
+                                        <td>OrderInternalApi</td>
+                                        <td><a class="pure-button" target="_blank" href="http://logging.ctripcorp.com/#?app=340701">查看</a></td>
+                                        <td>
+                                            <a target="_blank" class="pure-button" href="http://portal.arch.ctripcorp.com/#menuId=sqlError~appId=340701">错误看板</a>
+                                            <a target="_blank" class="pure-button" href="http://portal.arch.ctripcorp.com/#menuId=sqlMonitor~appId=340701">实时监控</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>381003</td>
+                                        <td>旅行日程online web后台服务</td>
+                                        <td>ws.schedule.ctripcorp.com</td>
+                                        <td>Customer-API-API</td>
+                                        <td><a class="pure-button" target="_blank" href="http://logging.ctripcorp.com/#?app=381003">查看</a></td>
+                                        <td>
+                                            <a target="_blank" class="pure-button" href="http://portal.arch.ctripcorp.com/#menuId=sqlError~appId=381003">错误看板</a>
+                                            <a target="_blank" class="pure-button" href="http://portal.arch.ctripcorp.com/#menuId=sqlMonitor~appId=381003">实时监控</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        
-                        <table style="display:none" class="pure-table pure-table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>pool name</th>
-                                    <th>description</th>
-                                    <th>counters</th>
-                                    <th>sysmon</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>服务</td>
-                                    <td>381001</td>
-                                    <td>为旅行日程H5提供SOA2.0服务</td>
-                                    <td><a target="_blank" href=""></a></td>
-                                    <td><a target="_blank" href=""></a></td>
-                                </tr>
-                                <tr>
-                                    <td>服务</td>
-                                    <td>340101</td>
-                                    <td>手机服务端</td>
-                                    <td><a target="_blank" href=""></a></td>
-                                    <td><a target="_blank" href=""></a></td>
-                                </tr>
-                                <tr>
-                                    <td>服务</td>
-                                    <td>340701</td>
-                                    <td>无线内部订单SOA2.0服务（订单落地使用</td>
-                                    <td><a target="_blank" href=""></a></td>
-                                    <td><a target="_blank" href=""></a></td>
-                                </tr>
-                                <tr>
-                                    <td>Webs</td>
-                                    <td>340502</td>
-                                    <td>无线旅行日程H5站点</td>
-                                    <td><a target="_blank" href=""></a></td>
-                                    <td><a target="_blank" href=""></a></td>
-                                </tr>
-                                <tr>
-                                    <td>Jobs</td>
-                                    <td>340501</td>
-                                    <td>旅行日程JobWS（用于同步Poi数据</td>
-                                    <td><a target="_blank" href=""></a></td>
-                                    <td><a target="_blank" href=""></a></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="section2">
+                            <h3 class="header3">Webs 列表</h3>
+                            <table class="pure-table pure-table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>AppID</th>
+                                        <th>名称</th>
+                                        <th>域名</th>
+                                        <th>虚拟目录</th>
+                                        <th>clog</th>
+                                        <th>SQL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>340502</td>
+                                        <td>无线旅行日程H5站点</td>
+                                        <td>m.ctrip.com</td>
+                                        <td>webapp/schedule</td>
+                                        <td><a class="pure-button" target="_blank" href="http://logging.ctripcorp.com/#?app=340502">查看</a></td>
+                                        <td>
+                                            <a target="_blank" class="pure-button" href="http://portal.arch.ctripcorp.com/#menuId=sqlError~appId=340502">错误看板</a>
+                                            <a target="_blank" class="pure-button" href="http://portal.arch.ctripcorp.com/#menuId=sqlMonitor~appId=340502">实时监控</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>380102</td>
+                                        <td>旅行日程online web</td>
+                                        <td>my.ctrip.com</td>
+                                        <td>Customer-API-Online</td>
+                                        <td><a class="pure-button" target="_blank" href="http://logging.ctripcorp.com/#?app=380102">查看</a></td>
+                                        <td>
+                                            <a target="_blank" class="pure-button" href="http://portal.arch.ctripcorp.com/#menuId=sqlError~appId=380102">错误看板</a>
+                                            <a target="_blank" class="pure-button" href="http://portal.arch.ctripcorp.com/#menuId=sqlMonitor~appId=380102">实时监控</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="section2">
+                            <h3 class="header3">Jobs 列表</h3>
+                            <table class="pure-table pure-table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>AppID</th>
+                                        <th>名称</th>
+                                        <th>域名</th>
+                                        <th>虚拟目录</th>
+                                        <th>clog</th>
+                                        <th>SQL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>340501</td>
+                                        <td>旅行日程JobWS</td>
+                                        <td>jobws.mobile.ctripcorp.com</td>
+                                        <td>schedule-jobws</td>
+                                        <td><a class="pure-button" target="_blank" href="http://logging.ctripcorp.com/#?app=340501">查看</a></td>
+                                        <td>
+                                            <a target="_blank" class="pure-button" href="http://portal.arch.ctripcorp.com/#menuId=sqlError~appId=340501">错误看板</a>
+                                            <a target="_blank" class="pure-button" href="http://portal.arch.ctripcorp.com/#menuId=sqlMonitor~appId=340501">实时监控</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
-                <!-- server -->
-                <div class="ancher" id="server"></div>
-                <div class="section1">
-                    <h2 class="header2">服务</h2>
-                    <div class="section2">
-                        <h3 class="header3">服务</h3>
-                        <ul class="ext-pure-ul">
-                            <li><a href="http://eudemon.ops.ctripcorp.com/mobile/?id=mobile_30300101" target="_blank">TCP服务</a></li>
-                            <li><a href="http://es.ops.ctripcorp.com/#/dashboard/elasticsearch/mobile" target="_blank">Mobile Trace</a></li>
-                            <li><a href="http://eudemon.ops.ctripcorp.com/soa/?id=soa_wireless.order.internal.v1.orderservice" target="_blank">Soa 2.0服务 / orderservice</a></li>
-                            <li><a href="http://eudemon.ops.ctripcorp.com/soa/?id=soa_wireless.schedule.smarttriph5.v1.smarttriph5service" target="_blank">Soa 2.0服务 / smarttriph5service</a></li>
-                        </ul>
+                    <!-- cluster -->
+                    <div class="ancher" id="cluster"></div>
+                    <div class="section1">
+                        <h2 class="header2">集群</h2>
+                        <div class="section2">
+                            <h3 class="header3">服务器集群列表</h3>
+                            <table class="pure-table pure-table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>名称</th>
+                                        <th>域名</th>
+                                        <th>操作</th>
+                                        <th>日志</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Ws.mobile.schedule</td>
+                                        <td>ws.mobile.schedule.ctripcorp.com</td>
+                                        <td>
+                                            <a class="pure-button" href="http://opskits.ctripcorp.com/Pool/List?Device=&Product=&Status=&Keyword=VS_Ws.mobile.schedule" target="_blank">监控</a>
+                                        </td>
+                                        <td>
+                                            <a href="http://es.ops.ctripcorp.com/#/dashboard/elasticsearch/ws.mobile.schedule.ctripcorp.com" class="pure-button" target="_blank">查看</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>ws.schedule.ctripcorp.com</td>
+                                        <td>ws.schedule.ctripcorp.com</td>
+                                        <td>
+                                            <a class="pure-button" href="http://opskits.ctripcorp.com/Pool/List?Device=&Product=&Status=&Keyword=VS_Ws.schedule" target="_blank">监控</a>
+                                        </td>
+                                        <td>
+                                            <a href="http://es.ops.ctripcorp.com/#/dashboard/elasticsearch/ws.schedule.ctripcorp.com" class="pure-button" target="_blank">查看</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>jobws.mobile.ctripcorp.com</td>
+                                        <td>jobws.mobile.ctripcorp.com</td>
+                                        <td>
+                                            <a class="pure-button" href="http://opskits.ctripcorp.com/Pool/List?Device=&Product=&Status=&Keyword=jobws.mobile.ctripcorp.com" target="_blank">监控</a>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>w-schedule-m.ctrip.com</td>
+                                        <td>路由到:<br />&nbsp;&nbsp;m.ctrip.com/webapp/schedule<br />&nbsp;&nbsp;my.ctrip.com/customer-api-online</td>
+                                        <td>
+                                            <a class="pure-button" href="http://opskits.ctripcorp.com/Pool/List?Device=&Product=&Status=&Keyword=sg_schedule_80&Vip=10.8.16.25" target="_blank">监控</a>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>schedule</td>
+                                        <td>schedule.ctripcorp.com</td>
+                                        <td>
+                                            <a class="pure-button" href="http://opskits.ctripcorp.com/Pool/List?Device=&Product=&Status=&Keyword=sg_schedule_80&Vip=10.8.108.31" target="_blank">监控</a>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
-                <div class="section1">
-                    <div class="section2">
-                        <h3 class="header3">IRC</h3>
-                        <ul class="ext-pure-ul">
-                            <li><a href="http://irc.ctripcorp.com/" target="_blank">IRC</a></li>
-                        </ul>
+                    <!-- server -->
+                    <div class="ancher" id="server"></div>
+                    <div class="section1">
+                        <h2 class="header2">服务</h2>
+                        <div class="section2">
+                            <h3 class="header3">TCP 服务列表</h3>
+                            <table class="pure-table pure-table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>服务号</th>
+                                        <th>服务名</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>30300101</td>
+                                        <td>获取行程列表</td>
+                                        <td>
+                                            <a href="http://eudemon.ops.ctripcorp.com/mobile/?id=mobile_30300101" class="pure-button" target="_blank">监控</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>30300201</td>
+                                        <td>新增修改行程</td>
+                                        <td>
+                                            <a href="http://eudemon.ops.ctripcorp.com/mobile/?id=mobile_30300201" class="pure-button" target="_blank">监控</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>30300202</td>
+                                        <td>删除旅行日程</td>
+                                        <td>
+                                            <a href="http://eudemon.ops.ctripcorp.com/mobile/?id=mobile_30300202" class="pure-button" target="_blank">监控</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>30300301</td>
+                                        <td>行程短信解析</td>
+                                        <td>
+                                            <a href="http://eudemon.ops.ctripcorp.com/mobile/?id=mobile_30300301" class="pure-button" target="_blank">监控</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>30300302</td>
+                                        <td>行程短信解析并添加</td>
+                                        <td>
+                                            <a href="http://eudemon.ops.ctripcorp.com/mobile/?id=mobile_30300302" class="pure-button" target="_blank">监控</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>30300401</td>
+                                        <td>获取POI收藏列表</td>
+                                        <td>
+                                            <a href="http://eudemon.ops.ctripcorp.com/mobile/?id=mobile_30300401" class="pure-button" target="_blank">监控</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>30300402</td>
+                                        <td>POI联想</td>
+                                        <td>
+                                            <a href="http://eudemon.ops.ctripcorp.com/mobile/?id=mobile_30300402" class="pure-button" target="_blank">监控</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>30300403</td>
+                                        <td>POI推荐</td>
+                                        <td>
+                                            <a href="http://eudemon.ops.ctripcorp.com/mobile/?id=mobile_30300403" class="pure-button" target="_blank">监控</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>30300404</td>
+                                        <td>酒店联想</td>
+                                        <td>
+                                            <a href="http://eudemon.ops.ctripcorp.com/mobile/?id=mobile_30300404" class="pure-button" target="_blank">监控</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>30300501</td>
+                                        <td>行程发现</td>
+                                        <td>
+                                            <a href="http://eudemon.ops.ctripcorp.com/mobile/?id=mobile_30300501" class="pure-button" target="_blank">监控</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="section2">
+                            <h3 class="header3">Mobile Trace</h3>
+                            <ul class="ext-pure-ul ext-pure-border-1">
+                                <li><a href="http://es.ops.ctripcorp.com/#/dashboard/elasticsearch/mobile" class="pure-button" target="_blank">监控</a></li>
+                            </ul>
+                        </div>
+                        <div class="section2">
+                            <h3 class="header3">SOA 2.0服务</h3>
+                            <table class="pure-table pure-table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>服务</th>
+                                        <th>说明</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>wireless.order.internal.v1.orderservice</td>
+                                        <td>无线内部订单SOA2.0服务 </td>
+                                        <td>
+                                            <a href="http://eudemon.ops.ctripcorp.com/soa/?id=soa_wireless.schedule.smarttriph5.v1.smarttriph5service" class="pure-button" target="_blank">监控</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>wireless.schedule.smarttriph5.v1.smarttriph5service</td>
+                                        <td>为旅行日程H5提供SOA2.0服务</td>
+                                        <td>
+                                            <a href="http://eudemon.ops.ctripcorp.com/soa/?id=soa_wireless.order.internal.v1.orderservice" class="pure-button" target="_blank">监控</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
 
-                <!-- contact -->
-                <div class="ancher" id="contact"></div>
-                <div class="section1">
-                    <h2 class="header2">联系我们</h2>
-                    <div class="section2">
-                        <h3 class="header3">联系我们</h3>
-                        <ul class="ext-pure-ul-horizontal">
-                            <li><a href="mailto:jqxie@Ctrip.com">谢建强</a></li>
-                            <li><a href="mailto:qichen@Ctrip.com">陈琦</a></li>
-                            <li><a href="mailto:xz_wang@Ctrip.com">王炫召</a></li>
-                            <li><a href="mailto:hlliu@Ctrip.com">刘洪良</a></li>
-                        </ul>
+                    <!-- DB -->
+                    <div class="ancher" id="db"></div>
+                    <div class="section1">
+                        <h2 class="header2">DB</h2>
+                        <div class="section2">
+                            <h3 class="header3">DB 列表</h3>
+                            <table class="pure-table pure-table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th style="width:40%;">DB名称</th>
+                                        <th style="width:60%;">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>SCHSmartTripDB</td>
+                                        <td><a class="pure-button" href="http://eudemon.ops.ctripcorp.com/dbmon/?id=SCHSmartTripDB" target="blank">监控</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>MobileDB</td>
+                                        <td><a class="pure-button" href="http://eudemon.ops.ctripcorp.com/dbmon/?id=MobileDB" target="blank">监控</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Memcache -->
+                    <div class="ancher" id="memcache"></div>
+                    <div class="section1">
+                        <h2 class="header2">Memcache</h2>
+                        <div class="section2">
+                            <h3 class="header3">Memcache 列表</h3>
+                            <table class="pure-table pure-table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>名称</th>
+                                        <th>实例</th>
+                                        <th>监控</th>
+                                        <!-- <th>Clients</th> -->
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>ScheduleCached</td>
+                                        <td>
+                                            <ul class="ext-pure-ul">
+                                                <li>
+                                                    <a target="_blank" href="http://sysmon.sh.ctripcorp.com/memcached/?memcached=10.8.91.83:11280&metric_type=CLUSTER" class="">10.8.91.83:11280</a>
+                                                </li>
+                                                <li>
+                                                    <a target="_blank" href="http://sysmon.sh.ctripcorp.com/memcached/?memcached=10.8.89.225:11235&metric_type=CLUSTER" class="">10.8.89.225:11235</a>
+                                                </li>
+                                                <li>
+                                                    <a target="_blank" href="http://sysmon.sh.ctripcorp.com/memcached/?memcached=10.8.91.82:11281&metric_type=CLUSTER" class="">10.8.91.82:11281</a>
+                                                </li>
+                                                <li>
+                                                    <a target="_blank" href="http://sysmon.sh.ctripcorp.com/memcached/?memcached=10.8.91.85:11277&metric_type=CLUSTER" class="">10.8.91.85:11277</a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td><a target="_blank" href="http://cdataportal.sh.ctripcorp.com/fx/memdb/">Dash board</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- IRC -->
+                    <div class="ancher" id="smoking"></div>
+                    <div class="section1">
+                        <h2 class="header2">IRC</h2>
+                        <div class="section2">
+                            <h3 class="header3">IRC</h3>
+                            <ul class="ext-pure-ul ext-pure-border-1">
+                                <li><a href="http://irc.ctripcorp.com/" target="_blank">IRC</a></li>
+                            </ul>
+                        </div>    
+                    </div>
+
+                    <!-- Smoking -->
+                    <div class="ancher" id="smoking"></div>
+                    <div class="section1">
+                        <h2 class="header2">Smoking Report</h2>
+                        <div class="section2">
+                            <h3 class="header3">Smoking Report</h3>
+                            <ul class="ext-pure-ul ext-pure-border-1">
+                                <li>
+                                    <a class="pure-button" href="http://conf.ctripcorp.com/pages/viewpage.action?spaceKey=OPS&title=SWAT+Smoking+Reports" target="_blank">查看</a>
+                                    <a class="pure-button" href="http://smoking.ops.ctripcorp.com:8080/dailyReport" target="_blank">每日报告</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- contact -->
+                    <div class="ancher" id="contact"></div>
+                    <div class="section1">
+                        <h2 class="header2">联系我们</h2>
+                        <div class="section2">
+                            <h3 class="header3">联系我们</h3>
+                            <ul class="ext-pure-ul-horizontal ext-pure-border-1">
+                                <li><a href="mailto:jqxie@Ctrip.com">谢建强</a></li>
+                                <li><a href="mailto:qichen@Ctrip.com">陈琦</a></li>
+                                <li><a href="mailto:xz_wang@Ctrip.com">王炫召</a></li>
+                                <li><a href="mailto:hlliu@Ctrip.com">刘洪良</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-			</div>
-            <div id="footer">
+                <div id="footer">
+                </div>
             </div>
         </div>
-	</div>
-</body>
+    </body>
 </html>
